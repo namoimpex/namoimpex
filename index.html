@@ -6,7 +6,7 @@
     <title>Gems and Jewellery Sourcing</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
         }
@@ -16,8 +16,37 @@
             padding: 1rem;
             text-align: center;
         }
-        header h1 {
-            margin: 0;
+        .nav {
+            display: flex;
+            justify-content: center;
+            padding: 0.5rem 0;
+            background-color: #444;
+        }
+        .nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+        .nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        .hero img {
+            width: 100%;
+            height: auto;
+        }
+        .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 1rem;
+            border-radius: 10px;
         }
         .container {
             padding: 2rem;
@@ -64,24 +93,6 @@
             width: 100%;
             bottom: 0;
         }
-        .hero {
-            position: relative;
-            text-align: center;
-            color: white;
-        }
-        .hero img {
-            width: 100%;
-            height: auto;
-        }
-        .hero-text {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: rgba(0, 0, 0, 0.5);
-            padding: 1rem;
-            border-radius: 10px;
-        }
         .service-image {
             width: 100%;
             height: auto;
@@ -103,20 +114,27 @@
         <h1>Gems and Jewellery Sourcing</h1>
     </header>
 
+    <div class="nav">
+        <a href="#about">About Us</a>
+        <a href="#services">Our Services</a>
+        <a href="#contact">Contact Us</a>
+    </div>
+
     <div class="hero">
         <img src="https://via.placeholder.com/1200x400" alt="Gems and Jewellery">
         <div class="hero-text">
-            <h2>Your Trusted Partner in Gems and Jewellery</h2>
+            <h2>GLITTERING FANCIES</h2>
+            <p>An irresistible spectrum of precious and semi-precious gemstones.</p>
         </div>
     </div>
 
     <div class="container">
-        <div class="section">
+        <div class="section" id="about">
             <h2>About Us</h2>
             <p>We are a leading sourcing company specializing in Gems and Jewellery. Headquartered in Hong Kong, we source and supply high-quality gems and jewellery across the world, particularly focusing on markets in India, Hong Kong, and China.</p>
         </div>
 
-        <div class="section">
+        <div class="section" id="services">
             <h2>Our Services</h2>
             <img src="https://via.placeholder.com/800x400" alt="Our Services" class="service-image">
             <p>With extensive experience and a vast network in the industry, we offer a range of services including:</p>
@@ -128,7 +146,7 @@
             </ul>
         </div>
 
-        <div class="section contact">
+        <div class="section contact" id="contact">
             <h2>Contact Us</h2>
             <p>We'd love to hear from you! Reach out to us on WhatsApp:</p>
             <a href="https://wa.me/yournumber" target="_blank">WhatsApp Us</a>
